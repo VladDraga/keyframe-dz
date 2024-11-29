@@ -1,0 +1,44 @@
+.box-box {
+  width: 1500px;
+  height: 1500px;
+  position: relative;
+  border-color: black;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  background-color: red;
+  animation-name: box;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes box {
+  0% {
+    background-color: red;
+    top: 50px;
+    left: 100px;
+  }
+
+  25% {
+    background-color: blue;
+    left: 100px;
+    top: 200px;
+  }
+
+  50% {
+    background-color: green;
+    top: 200px;
+    left: 300px;
+  }
+
+  75% {
+    background-color: yellow;
+    left: 300px;
+    top: 50px;
+  }
+}
